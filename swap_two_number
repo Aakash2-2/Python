@@ -1,0 +1,10 @@
+# Swap two number
+
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+
+c = b
+b = a
+a = c
+print("a: ",a)
+print("b: ",b)
