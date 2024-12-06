@@ -1,0 +1,20 @@
+"""
+Notes---
+if you live 90 years and your current age is 45 so calculate your remanining days,
+week and years 
+1 year == 365 days 
+1 year == 52 weeks
+1 year == 12 months
+
+input : User age
+output: User your have a days, b month and c weeks left.
+"""
+
+age = int(input("Enter your age: "))
+
+remanining_year = 90 - age
+remanining_months = remanining_year * 12
+remanining_weeks = remanining_year * 52
+remanining_days = remanining_year * 365
+print(f"You have {remanining_days} days {remanining_months} months and {remanining_weeks} weeks are left"  )
+
