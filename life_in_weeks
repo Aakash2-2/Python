@@ -17,4 +17,3 @@ remanining_months = remanining_year * 12
 remanining_weeks = remanining_year * 52
 remanining_days = remanining_year * 365
 print(f"You have {remanining_days} days {remanining_months} months and {remanining_weeks} weeks are left"  )
-
