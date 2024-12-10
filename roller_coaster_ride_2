@@ -1,0 +1,36 @@
+print("-------------------Roller-Coaster Ride--------------------")
+
+height = int(input("Enter Your Height in cm: "))
+ticket = 0
+
+if height >= 3:
+    print("Let's go !!!!!!")
+    age = int(input("Enter Your Age: "))
+    if age <= 12:
+        ticket = 150
+        print("Ticket price is Rs 150.")
+    elif age >= 60 and age <= 65:
+        ticket = 180
+        print("Ticket Price Rs 180. Happy Retirement.")
+        
+    elif age >= 18 and age <= 70:
+        ticket = 200
+        print("Ticket Price Rs 200.")
+    else:
+        print("Too old for Speed.")
+    
+    want_photos = input("Do you want photos Price Rs:50 Type'Y'/'N':")
+    if "Y" == want_photos.upper():
+        ticket = ticket + 50
+#discount feature
+    dis = int(input("Enter discount Amount in %: "))
+    if dis <= 20:
+        discount = ticket * (dis/100)
+        ticket = ticket - round(discount)
+    else:
+        print("Discount amount should be less than 20%: ")
+    
+    print(f"\nYour total ticket price is: Rs.{ticket}.")
+
+else:
+    print("Can't Ride")
