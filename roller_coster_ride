@@ -1,0 +1,17 @@
+print("------------------- Roller_Coaster_Ride --------------------")
+
+height = int(input("Enter Your Height: "))
+
+if height >= 3:
+    print("Let's go !!!!!!")
+    age = int(input("Enter Your Age: "))
+    if age <= 12:
+        print("Pay Rs 150 Rupee.")
+    elif age >= 60 and age <= 65:
+        print("Pay Rs 150 Rupee Happy Retirement.")
+    elif age >= 18 and age <= 70:
+        print("Pay Rs 200 Rupee.")
+    else:
+        print("Too old for Speed.")
+else:
+    print("Can't Ride")
