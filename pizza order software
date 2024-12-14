@@ -1,0 +1,41 @@
+print("Automatic Pizza Order Machine")
+bill = 0
+
+print("Select Pizza Size: \n 1. Small Pizza Enter 'S or s' Rs.70/- \n 2. Medium Pizza Enter 'M or m' Rs.150/- \n 3. Large Pizza Enter 'L or l' Rs.300/-")
+size = (input("Please Enter Pizza Size: S\\M\\L: \n"))
+
+if size == 'S' or size == 's':
+    bill += 70
+    print("Small pizza is Packed Please wait a moment: Pay 70")
+elif size == 'M' or size == 'm':
+    bill += 150
+    print("Medium pizza is Packed Please wait a moment: Pay 150")
+elif size == 'L' or size == 'l':
+    bill += 300
+    print("Large pizza is Packed Please wait a moment: Pay 300")  
+else:
+    print("Invalid Order.")
+
+add_pepporoni = input("Do you want pepporoni? S:30 M/L: 50 'Y/N': ")
+if add_pepporoni == 'Y' or add_pepporoni == 'y':
+    if size == 'S' or size == 's':
+        bill = bill + 30
+    else:
+        bill = bill + 50
+
+extra_cheese = input("Do you want add extra cheese? S:20 M/L: 40 'Y/N': ")
+if extra_cheese == 'y' or extra_cheese == 'Y':
+    if size == 'S' or size == 's':
+        bill += 20
+    else:
+        bill += 40
+
+quantity = int(input("How much quantity do you prefer: "))
+if quantity == 0:
+    bill *= quantity + 1
+elif quantity == 1:
+    bill *= 1
+else:
+    bill *= quantity
+
+print(f"Your total pizza bill is: Rs. {bill}") 
