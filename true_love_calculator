@@ -1,0 +1,32 @@
+print("True Love Calculator")
+
+name1 = input("Enter your first name: ")
+name2 = input("Enter your first name: ")
+
+final_name = name1 + name2
+
+names = final_name.lower()
+
+T = names.count('t')
+R = names.count('r')
+U = names.count('u')
+E = names.count('e')
+
+true = T+R+U+E
+
+L = names.count('l')
+O = names.count('o')
+V = names.count('v')
+E = names.count('e')
+
+love = L+O+V+E
+
+true_love = str(true) + str(love)
+lovers = int(true_love)
+
+if lovers < 10 or lovers > 90:
+    print(f"Don't be coke and mentos. You're love score is {lovers}")
+elif lovers > 40 and lovers < 50:
+    print(f"You are like earth and moon together. You're love score is {lovers}")
+else:
+    print(f"You're love score is {lovers}")
