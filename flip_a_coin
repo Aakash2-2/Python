@@ -1,0 +1,11 @@
+import random
+
+print("Flip a coin:")
+
+coin = [0,1]
+flip = random.choice(coin)
+
+if flip == 0:
+    print("It's Head")
+else:
+    print("It's Tail")
