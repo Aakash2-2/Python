@@ -1,0 +1,21 @@
+num1 = int(input("Enter a 1st number: "))
+num2 = int(input("Enter a 2nd number: "))
+oper = input("Enter Operation to perform: TYPE: add, sub, mul, div:  ")
+
+def cal(num1, num2, oper):
+    if oper == "add":
+        add = num1 + num2
+        print(add)
+        
+    elif oper == "sub":
+        sub = num1 - num2
+        print(sub)
+    
+    elif oper == "mul":
+        mul = num1 * num2
+        print(mul)
+    elif oper == "div":
+        div = num1 / num2
+        print(div)
+    
+cal(num1, num2, oper)
