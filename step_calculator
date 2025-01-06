@@ -1,0 +1,20 @@
+import math
+print("Welcome to steps calculator.")
+"""
+We estimate that a step is about 80 centimeters. 
+There are one hundred thousand centimeters in a kilometer. 
+Since 100000 divided by 80 is 1250, the formula and 
+the answer to 3291 steps in km is as follows:
+
+Steps ÷ 1250 = km
+3291 ÷ 1250 = 2.6328
+3291 Steps ≈ 2.6328 km
+"""
+
+steps = int(input("Enter your steps in integer or number: "))
+#my step size is estimate 40-42 cm
+step_apart = int(input("Enter you step distance in cm: "))
+step_size = (math.ceil(100000 / step_apart))
+
+steps_to_km = (steps/step_size) 
+print(f"Today you run {round(steps_to_km,2)} kilometer")
